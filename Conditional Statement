@@ -1,0 +1,62 @@
+Conditional Statement:
+
+QUESTION:
+
+Check numbers from 1 to 10
+If the number is even, skip it
+If the number is greater than 7, stop the loop
+Otherwise, print the number
+
+ CODE:
+
+for i in range(1, 11):
+    if i % 2 == 0:
+        continue     
+
+    if i > 7:
+        break       
+
+    print(i)
+
+OUTPUT:
+1
+3
+5
+7
+
+Observation:
+
+if conditions control the flow of execution.
+continue skips the current iteration when the condition is true.
+break exits the loop completely.
+Conditional statements decide when continue or break should run.
+
+
+
+QUESTION:
+
+Check numbers from 1 to 5
+If the number is 3, leave the block empty
+Print all other numbers
+
+CODE:
+
+for i in range(1, 6):
+    if i == 3:
+        pass          
+    else:
+        print(i)
+
+OUTPUT:
+1
+2
+4
+5
+
+Observation:
+
+pass is used inside a conditional statement as a placeholder.
+The condition is checked, but no action is performed.
+Program execution continues normally.
+Useful when a condition is needed syntactically but logic will be added later.
+

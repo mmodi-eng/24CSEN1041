@@ -1,0 +1,58 @@
+Looping:
+
+QUESTION:
+Print numbers from 1 to 10
+Skip multiples of 3
+Stop the loop when the number reaches 8
+
+CODE:
+for i in range(1, 11):
+    if i % 3 == 0:
+        continue     
+
+    if i == 8:
+        break         
+
+    print(i)
+
+OUTPUT:
+1
+2
+4
+5
+7
+
+observation:
+continue skips only the current loop iteration.
+Numbers divisible by 3 are ignored.
+break terminates the loop completely when i == 8.
+Code after break is not executed.
+
+
+
+
+QUESTION:
+
+Print numbers from 1 to 5
+When the number is 4, do nothing
+Print all other numbers
+
+CODE:
+for i in range(1, 6):
+    if i == 4:
+        pass          
+    else:
+        print(i)
+
+output:
+
+1
+2
+3
+5
+
+observation:
+   pass is a null statement — it does nothing.
+The loop continues normally without skipping or stopping.
+Used as a placeholder where a statement is required.
+Unlike continue, pass does not skip the iteration.

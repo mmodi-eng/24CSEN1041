@@ -1,0 +1,70 @@
+Exit function:
+
+QUESTION:
+
+Read numbers from 1 to 10
+Skip number 5
+Exit the loop when number becomes 8
+Print remaining numbers
+
+CODE:
+
+for i in range(1, 11):
+    if i == 5:
+        continue      
+
+    if i == 8:
+        break         
+
+    print(i)
+
+print("Loop exited")
+
+OUTPUT:
+1
+2
+3
+4
+6
+7
+Loop exited
+
+Observation:
+
+continue skips the current iteration but does not exit the loop.
+break exits the loop immediately.
+Statements after the loop still execute.
+Used when you want to exit a loop, not the whole program
+
+
+QUESTION:
+
+Check numbers from 1 to 5
+If number is 3, do nothing
+If number is 4, exit the program
+Otherwise, print the number
+
+CODE:
+
+for i in range(1, 6):
+    if i == 3:
+        pass       
+
+    elif i == 4:
+        exit()        
+
+    else:
+        print(i)
+
+print("This will not be printed")
+
+OUTPUT:
+1
+2
+
+Observation:
+
+pass does nothing and program continues normally.
+exit() terminates the entire program, not just the loop.
+Any code written after exit() will not execute.
+Useful when an immediate program stop is required.

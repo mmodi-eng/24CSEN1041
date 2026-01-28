@@ -1,0 +1,59 @@
+Branching :
+QUESTION : Print numbers from 1 to 10,
+skip even numbers
+stop the loop when the number becomes greater than 7 ?
+
+CODE:
+for i in range(1, 11):
+    if i % 2 == 0:
+        continue      
+
+    if i > 7:
+        break
+
+    print(i)
+OUTPUT :
+1
+3
+5
+7
+
+observation:
+continue skips the current iteration and moves to the next loop cycle.
+
+break terminates the loop completely.
+
+Even numbers are ignored, and the loop stops once i becomes 9.
+
+break has higher impact than continue because it ends the loop entirely.
+
+
+
+
+QUESTION:
+Check numbers from 1 to 5
+If the number is 3, do nothing for now
+Otherwise, print the number
+
+CODE:
+for i in range(1, 6):
+    if i == 3:
+        pass          
+    else:
+        print(i)
+
+OUTPUT:
+1
+2
+4
+5
+
+observation:
+passdoes nothing — it’s just a placeholder.
+
+The loop does not skip or stop; execution continues normally.
+
+Useful when:
+you want to write logic later
+Python requires a statement inside a block
+Unlike continue, pass does not skip the iteration.

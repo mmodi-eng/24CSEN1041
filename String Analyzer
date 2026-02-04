@@ -1,0 +1,147 @@
+Program 1:
+QESUTIONT: String Analyzer (Detailed Analysis)
+CODE:
+
+text = "   Python Programming Language 2025   "
+
+print("Original Text:'", text, "'", sep="")
+clean = text.strip()
+
+print("After strip:'", clean, "'", sep="")
+print("Length:", len(clean))
+print("Uppercase:", clean.upper())
+print("Lowercase:", clean.lower())
+print("Title Case:", clean.title())
+
+print("Vowels count:", sum(1 for ch in clean.lower() if ch in "aeiou"))
+print("Digits count:", sum(1 for ch in clean if ch.isdigit()))
+print("Spaces count:", clean.count(" "))
+
+
+ out put:
+
+Original Text:'   Python Programming Language 2025   '
+After strip:'Python Programming Language 2025'
+Length: 33
+Uppercase: PYTHON PROGRAMMING LANGUAGE 2025
+Lowercase: python programming language 2025
+Title Case: Python Programming Language 2025
+Vowels count: 10
+Digits count: 4
+Spaces count: 3
+
+
+Program 2:
+qesution ;
+
+Username & Password Validation
+code:
+
+username = "Student_01"
+password = "Python@123"
+
+print("Username:", username)
+print("Password:", password)
+
+if username.isalnum() or "_" in username:
+    print("Username format: Valid")
+else:
+    print("Username format: Invalid")
+
+if (len(password) >= 8 and
+    any(ch.isupper() for ch in password) and
+    any(ch.islower() for ch in password) and
+    any(ch.isdigit() for ch in password)):
+    print("Password strength: Strong")
+else:
+    print("Password strength: Weak")
+OUTPUT:
+Username: Student_01
+Password: Python@123
+Username format: Valid
+Password strength: Strong,
+
+
+Program 3:
+QESUTION:
+Word Frequency Counter
+CODE:
+
+sentence = "Python is easy and Python is powerful"
+
+words = sentence.lower().split()
+print("Words:", words)
+
+print("Word Frequency:")
+for word in set(words):
+    print(word, "->", words.count(word))
+OUTPUT:
+Words: ['python', 'is', 'easy', 'and', 'python', 'is', 'powerful']
+Word Frequency:
+python -> 2
+is -> 2
+easy -> 1
+and -> 1
+powerful -> 1
+
+Program 4:
+
+QESUTION:
+Palindrome Checker (Using Slicing)word = "madam"
+CODE:
+
+word = "madam"
+
+print("Word:", word)
+
+if word == word[::-1]:
+    print("Result: Palindrome")
+else:
+    print("Result: Not a Palindrome")
+
+OUTPUT:
+
+Word: madam
+Result: Palindrome
+
+
+
+Program 5: 
+
+QESUTION:
+String Menu-Driven Programtext = "hello python world"
+
+CODE:
+
+while True:
+    print("\nMENU")
+    print("1. Uppercase")
+    print("2. Lowercase")
+    print("3. Reverse")
+    print("4. Word Count")
+    print("5. Exit")
+
+    choice = 3   # fixed choice for demo
+
+    if choice == 1:
+        print("Uppercase:", text.upper())
+    elif choice == 2:
+        print("Lowercase:", text.lower())
+    elif choice == 3:
+        print("Reverse:", text[::-1])
+        break
+    elif choice == 4:
+        print("Word Count:", len(text.split()))
+    elif choice == 5:
+        print("Exit")
+        break
+    else:
+        print("Invalid choice")
+OUTPUT:
+MENU
+1. Uppercase
+2. Lowercase
+3. Reverse
+4. Word Count
+5. Exit
+Reverse: dlrow nohtyp olleh
